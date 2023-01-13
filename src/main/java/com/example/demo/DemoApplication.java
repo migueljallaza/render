@@ -22,7 +22,7 @@ public class DemoApplication {
 	@GetMapping("count-users")
 	public String getCountUsers(){
 		long numberUsers = userRepository.count();
-		return "Number of users = "+numberUsers;
+		return "Cantidad de Usuarios : "+numberUsers;
 	}
 
 	@GetMapping("add-user")
@@ -31,7 +31,7 @@ public class DemoApplication {
 		user.setFirstName("Render");
 		user.setLastName("Spring Boot");
 		userRepository.save(user);
-		return "User added successfully";
+		return "User added!!!!!!!!!!!!!!!!!!!1";
 	}
 
 }
