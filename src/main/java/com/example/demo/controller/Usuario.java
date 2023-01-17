@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -40,7 +41,7 @@ public class Usuario {
 
     @GetMapping("list-user")
     public List<User> showAllJobs() {
-        return userRepository.findAll();
+        return userRepository.findAll(Sort.by("id").descending());
     }
 
 	@PostMapping("add")
