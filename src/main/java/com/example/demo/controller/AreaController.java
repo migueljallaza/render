@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*", methods= {RequestMethod.POST,RequestMethod.GET})    
 @RequestMapping("/area/")
 
 public class AreaController {
