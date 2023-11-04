@@ -17,7 +17,8 @@ import com.example.demo.entity.User;
 import com.example.demo.repository.UserRepository;
 
 @RestController
-@CrossOrigin(origins = "https://mike2023.netlify.app")
+//@CrossOrigin(origins = "https://mike2023.netlify.app")
+@CrossOrigin(origins = "http://localhost:8080") 
 @RequestMapping("/user/")
 public class Usuario {
 
